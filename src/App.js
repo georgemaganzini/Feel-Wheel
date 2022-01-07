@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import TempSearch from './TempSearch';
 import SearchResults from './SearchResults';
+import Wheel from './Wheel';
 
 function App() {
 	const searchOptions = {
@@ -12,7 +13,7 @@ function App() {
 	};
 
 	const [images, setImages] = useState([]);
-	const [searchString, setSearchString] = useState('minions');
+	const [searchString, setSearchString] = useState('feel');
 	const [lastSearch, setLastSearch] = useState('');
 
 	useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
 	}, []);
 
 	function getImages(searchString) {
-		const url = `${searchOptions.api}${searchOptions.endpoint}?api_key=${searchOptions.key}&q=${searchString} &limit=${searchOptions.limit}&offset=${searchOptions.offset}&rating=${searchOptions.rating}&lang=en`;
+		const url = `${searchOptions.api}${searchOptions.endpoint}?api_key=${searchOptions.key}&q=${searchString}&limit=${searchOptions.limit}&lang=en`;
 
 		fetch(url)
 			.then((response) => response.json())
@@ -44,6 +45,7 @@ function App() {
 	return (
 		<div>
 			welcome to the feel wheel
+			<Wheel />
 			<TempSearch
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}

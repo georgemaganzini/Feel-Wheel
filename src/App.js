@@ -43,7 +43,7 @@ function App() {
 	}
 
 	return (
-		<div>
+		<div id='app'>
 			welcome to the feel wheel
 			<Wheel />
 			<TempSearch

@@ -4,38 +4,51 @@ import { useEffect } from 'react';
 
 function Wheel(props) {
 	useEffect(() => {
-		const omenu = oMenu('app', {
-			menu: {},
+		const omenu = oMenu('wheel-container', {
+			menu: {
+				styles: {
+					innerCircle: {
+						fill: '#8fa6cb',
+					},
+				},
+			},
 
 			slice: {
 				contentSize: 40,
 				iconDistanceFromInnerCircle: 10,
+				onClick: function (event) {
+					console.log('hi');
+				},
 				styles: {
 					contentContainer: {
 						fontSize: 30,
-						color: '#efefef',
 					},
+					// not working, needs state?
+					// hover: {
+					// 	opacity: 0.5,
+					// },
 				},
 			},
 			nthSlice: {
 				contentSize: 25,
 				iconDistanceFromInnerCircle: 6,
 				parentFillMode: -0.1,
+				onClick: function (event) {
+					console.log('hi');
+				},
 				styles: {
 					contentContainer: {
 						fontSize: 20,
-						color: '#efefef',
 					},
+					// hover: {
+					// 	opacity: 0.5,
+					// },
 				},
-			},
-			// onOpen: onOpenCb,
-			onEndCloseAnimation: (val) => {
-				if (val) alert(`You want to: ${val}`);
 			},
 		});
 
-		omenu.on('sliceEnter', (ev) => {
-			console.log(ev); // => oMenu Event
+		omenu.on('sliceClick', (ev) => {
+			console.log(ev.data);
 		});
 
 		document.body.addEventListener('click', (ev) => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import Wheel from './Wheel';
 
 function SearchResults({ images }) {
 	function copyUrl(event) {

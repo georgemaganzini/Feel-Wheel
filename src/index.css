@@ -12,9 +12,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	/* background-color: #8fa6cb; */
-	background: linear-gradient(360deg, #7d84b2, #8fa6cb);
+	background: linear-gradient(360deg, #8aa399, #7d84b2, #8fa6cb);
 	background-size: 400% 400%;
-	animation: gradientFade 3s ease infinite;
+	animation: gradientFade 12s ease infinite;
 }
 
 @keyframes gradientFade {
@@ -49,4 +49,17 @@ body {
 .highlight {
 	opacity: 1;
 	box-shadow: 0 0 40px 15px #0ff;
+}
+
+.main {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.results-div {
+}
+
+.gallery {
+	column-count: 3;
 }

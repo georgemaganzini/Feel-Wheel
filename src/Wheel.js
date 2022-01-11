@@ -2,7 +2,7 @@ import React from 'react';
 import oMenu from 'o-menu';
 import { useEffect } from 'react';
 
-function Wheel(props) {
+function Wheel({ getImages }) {
 	useEffect(() => {
 		const omenu = oMenu('wheel-container', {
 			menu: {
@@ -48,7 +48,7 @@ function Wheel(props) {
 		});
 
 		omenu.on('sliceClick', (ev) => {
-			console.log(ev.data);
+			getImages(ev.data);
 		});
 
 		document.body.addEventListener('click', (ev) => {

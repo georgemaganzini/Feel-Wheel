@@ -37,16 +37,10 @@ function Wheel({ getImages }) {
 				contentSize: 25,
 				iconDistanceFromInnerCircle: 6,
 				parentFillMode: -0.1,
-				onClick: function (event) {
-					console.log('hi');
-				},
 				styles: {
 					contentContainer: {
 						fontSize: 20,
 					},
-					// hover: {
-					// 	opacity: 0.5,
-					// },
 				},
 			},
 		});
@@ -55,17 +49,8 @@ function Wheel({ getImages }) {
 			getImages(ev.data);
 		});
 
-		// omenu.on('sliceEnter', (ev) => {
-		// 	ev.target.options.styles.contentContainer.color = 'green';
-		// });
-
-		// omenu.on('sliceLeave', (ev) => {
-		// 	console.log(ev.data);
-		// });
-
-		document.body.addEventListener('click', (ev) => {
+		document.body.addEventListener('contextmenu', (ev) => {
 			ev.preventDefault();
-
 			omenu.open(ev, {
 				slices: [
 					{
@@ -73,6 +58,9 @@ function Wheel({ getImages }) {
 						styles: {
 							defaults: {
 								fill: '#454E9E',
+							},
+							hover: {
+								opacity: 0.5,
 							},
 						},
 						data: '😂',
@@ -120,7 +108,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '☠',
+								data: 'dead',
 							},
 						],
 					},

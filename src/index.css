@@ -13,7 +13,14 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: linear-gradient(360deg, #8aa399, #7d84b2, #8fa6cb);
+	background: linear-gradient(
+		360deg,
+		#d71d36,
+		#f910a4,
+		#555eb4,
+		#01a24c,
+		#fdd821
+	);
 	background-size: 400% 400%;
 	animation: gradientFade 12s ease infinite;
 }
@@ -35,8 +42,9 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: #d5f9de;
-	background-color: #7d84b2;
+  opacity: .5;
+	color: white;
+	background-color: black;
 }
 
 #wheel-container {

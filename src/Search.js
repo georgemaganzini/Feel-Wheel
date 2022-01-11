@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TempSearch({ handleSubmit, handleChange, searchString }) {
+function Search({ handleSubmit, handleChange, searchString }) {
 	return (
 		<form onSubmit={handleSubmit} className='form-horizontal'>
 			<input
@@ -16,4 +16,4 @@ function TempSearch({ handleSubmit, handleChange, searchString }) {
 	);
 }
 
-export default TempSearch;
+export default Search;

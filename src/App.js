@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import TempSearch from './TempSearch';
 import SearchResults from './SearchResults';
 import Wheel from './Wheel';
 import Header from './Header';
@@ -50,9 +49,9 @@ function App() {
 				handleSubmit={handleSubmit}
 				searchString={searchString}
 			/>
+
 			<div className='main'>
 				<Wheel getImages={getImages} />
-
 				<SearchResults className='results-div' images={images} />
 			</div>
 		</div>

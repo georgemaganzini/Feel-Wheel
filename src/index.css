@@ -45,6 +45,7 @@ body {
 	color: white;
 	background-color: #363636;
 	line-height: 35px;
+	margin-bottom: -30px;
 }
 
 #wheel-container {
@@ -83,4 +84,10 @@ body {
 	.gallery {
 		column-count: 4;
 	}
+}
+
+.form-horizontal {
+	position: relative;
+	left: 35%;
+	top: -45px;
 }

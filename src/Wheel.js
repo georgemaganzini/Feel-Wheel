@@ -128,7 +128,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '😤',
+								data: 'fuming',
 							},
 							{
 								content: '😈',
@@ -137,7 +137,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '😈',
+								data: 'devil',
 							},
 							{
 								content: '🔪',
@@ -155,7 +155,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '🤬',
+								data: 'very angry',
 							},
 							{
 								content: '👎',
@@ -164,7 +164,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '👎',
+								data: 'thumbs down',
 							},
 						],
 					},
@@ -193,7 +193,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '🥰',
+								data: 'blushing',
 							},
 							{
 								content: '🥺',
@@ -276,7 +276,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '🙃',
+								data: 'awkward',
 							},
 						],
 					},
@@ -296,7 +296,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '🙌',
+								data: 'praise',
 							},
 							{
 								content: '🙏',
@@ -314,7 +314,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '🤙',
+								data: 'hang loose',
 							},
 							{
 								content: '👍',
@@ -323,7 +323,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '👍',
+								data: 'thumbs up',
 							},
 							{
 								content: '👏',
@@ -370,7 +370,7 @@ function Wheel({ getImages }) {
 										fill: '#8BC34A',
 									},
 								},
-								data: '🥳',
+								data: 'party',
 							},
 							{
 								content: '😎',
@@ -382,13 +382,13 @@ function Wheel({ getImages }) {
 								data: '😎',
 							},
 							{
-								content: '💅',
+								content: '✨',
 								styles: {
 									defaults: {
 										fill: '#F44336',
 									},
 								},
-								data: '💅',
+								data: 'sparkle',
 							},
 						],
 					},

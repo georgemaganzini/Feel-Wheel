@@ -14,7 +14,7 @@ function App() {
 	};
 
 	const [images, setImages] = useState([]);
-	const [searchString, setSearchString] = useState('emoji');
+	const [searchString, setSearchString] = useState('mouse click');
 	const [lastSearch, setLastSearch] = useState('');
 
 	useEffect(() => {
@@ -43,12 +43,6 @@ function App() {
 		getImages(searchString);
 	}
 
-	function handleClick(event) {
-		setSearchString(event.data);
-		console.log(event.data);
-		getImages(searchString);
-	}
-
 	return (
 		<div id='app'>
 			<Header
@@ -57,9 +51,7 @@ function App() {
 				searchString={searchString}
 			/>
 			<div className='main'>
-				<div id='wheel-container'>
-					<Wheel getImages={getImages} />
-				</div>
+				<Wheel getImages={getImages} />
 
 				<SearchResults className='results-div' images={images} />
 			</div>

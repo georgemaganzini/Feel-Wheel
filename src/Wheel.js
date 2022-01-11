@@ -4,9 +4,13 @@ import { useEffect } from 'react';
 
 function Wheel({ getImages }) {
 	useEffect(() => {
-		const omenu = oMenu('wheel-container', {
+		const omenu = oMenu('app', {
 			menu: {
 				styles: {
+					defaults: {
+						cursor: 'pointer',
+						position: 'fixed',
+					},
 					innerCircle: {
 						fill: '#8fa6cb',
 					},
@@ -50,6 +54,14 @@ function Wheel({ getImages }) {
 		omenu.on('sliceClick', (ev) => {
 			getImages(ev.data);
 		});
+
+		// omenu.on('sliceEnter', (ev) => {
+		// 	ev.target.options.styles.contentContainer.color = 'green';
+		// });
+
+		// omenu.on('sliceLeave', (ev) => {
+		// 	console.log(ev.data);
+		// });
 
 		document.body.addEventListener('click', (ev) => {
 			ev.preventDefault();

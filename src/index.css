@@ -67,9 +67,20 @@ body {
 	grid-auto-flow: column;
 }
 
-.results-div {
+@media (min-width: 600px) {
+	.gallery {
+		column-count: 2;
+	}
 }
 
-.gallery {
-	column-count: 3;
+@media (min-width: 1000px) {
+	.gallery {
+		column-count: 3;
+	}
+}
+
+@media (min-width: 1400px) {
+	.gallery {
+		column-count: 4;
+	}
 }

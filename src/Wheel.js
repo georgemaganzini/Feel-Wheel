@@ -81,7 +81,7 @@ function Wheel({ getImages }) {
 										fill: '#F44336',
 									},
 								},
-								data: '😅',
+								data: 'nervous',
 							},
 							{
 								content: '😏',

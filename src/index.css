@@ -44,9 +44,9 @@ body {
 	justify-content: center;
 	color: white;
 	background-color: #363636;
-	padding-top: 0.5em;
+	padding-top: 2em;
 	line-height: 2em;
-	margin-bottom: -33px;
+	height: 100px;
 }
 
 #wheel-container {

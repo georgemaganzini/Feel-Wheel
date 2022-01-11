@@ -16,7 +16,7 @@ The Feel Wheel allows users to effortlessly find the perfect .gifs for many diff
 ###  Getting Started/Installation Instructions: 
 
 - Fork and clone the repo down to your machine
-- Navigate to the directory from within the terminal and run ```npm start```
+- Navigate to the directory from within the terminal and run ```npm install``` ```npm start```
 
 ## Contribution Guidelines
 

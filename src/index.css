@@ -23,6 +23,7 @@ body {
 	);
 	background-size: 400% 400%;
 	animation: gradientFade 12s ease infinite;
+	overflow-x: hidden;
 }
 
 @keyframes gradientFade {
@@ -90,5 +91,5 @@ body {
 .form-horizontal {
 	position: relative;
 	left: 19em;
-	top: -3em;
+	top: -2.2em;
 }

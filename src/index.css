@@ -104,5 +104,15 @@ body {
 	}
 	h5 {
 		margin-top: -.5em;
+		margin-left: -13em;
 	}
+	body {
+		overflow-x: hidden;
+	}
+	.form-horizontal {
+	position: relative;
+	left: 5em;
+	top: -2.2em;
+}
+
 }

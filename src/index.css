@@ -74,6 +74,7 @@ body {
 	.gallery {
 		column-count: 2;
 	}
+
 }
 
 @media (min-width: 1000px) {
@@ -92,4 +93,16 @@ body {
 	position: relative;
 	left: 19em;
 	top: -2.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  	h1 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 14px;
+	}
+	h5 {
+		margin-top: -.5em;
+	}
 }
